@@ -64,7 +64,7 @@ class RegistrationBot:
         text = "You nickname = " + self.user.name + "\n\tpassword = " + self.user.password + "\n"
         server = smtplib.SMTP('smtp.gmail.com', 587)  # port 465 or 587
         server.starttls()
-        server.login('antonsh90@gmail.com', 'nikonok2016')
+        server.login('antonsh90@gmail.com', 'pass')
         server.sendmail('antonsh90@gmail.com', self.user.email, text)
         server.close()
 
